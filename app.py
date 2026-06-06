@@ -35,7 +35,7 @@ def add_sent(article):
 def summarize(title, body, api_key):
     import google.generativeai as genai
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     prompt = f"""Bu xəbəri iki dildə xülasə et.
 Başlıq: {title}
 Mətn: {body}
